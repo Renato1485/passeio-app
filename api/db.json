@@ -4,6 +4,15 @@
       "id": "1",
       "nome": "Restaurantes",
       "descricao": "Luagres para alimentação"
+    },
+    {
+      "id": "2",
+      "nome": "Shopping",
+      "descricao": "Passeio"
     }
+  ],
+  
+  "lugares": [
+    
   ]
 }
