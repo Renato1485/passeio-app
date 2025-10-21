@@ -44,10 +44,9 @@ export class LugarComponent implements OnInit {
        });
     }
   }
-
+  
  isCampoInvalido(nomeCampo: string): boolean {
     const campo = this.camposForm.get(nomeCampo);
     return campo?.invalid && campo?.touched && campo?.errors?.['required'];
   }
-
 } 

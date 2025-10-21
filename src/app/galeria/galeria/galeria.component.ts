@@ -15,17 +15,21 @@ export class GaleriaComponent implements OnInit {
 
   lugares: Lugar[] = [];
   categoriasFiltro: Categoria[] = [];
+  nomefiltro: string = '';
+  categoriaFiltro: string = '';
 
   constructor(
-    private LugarService: LugarService,
+    private lugarService: LugarService,
     private categoriaService: CategoriaService
   ) { }
 
   ngOnInit(): void {
     this.categoriaService.obterLista().subscribe(categorias => this.categoriasFiltro = categorias);
 
-    this.LugarService.obterLista().subscribe(lugaresResposta => this.lugares = lugaresResposta)
-
+    this.lugarService.obterLista().subscribe(lugaresResposta => this.lugares = lugaresResposta)
   }
 
+  filtrar() {
+    this.lugarService.filtrar(this.nomefiltro, this.categoriaFiltro).subscribe(resultado => this.lugares = resultado);
+  }
 }

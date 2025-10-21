@@ -7,12 +7,44 @@
     },
     {
       "id": "2",
-      "nome": "Shopping",
+      "nome": "Shoppings",
       "descricao": "Passeio"
+    },
+    {
+      "id": "3",
+      "nome": "Praias",
+      "descricao": "Banho"
+    },
+    {
+      "id": "4",
+      "nome": "Parques",
+      "descricao": "Lazer"
     }
   ],
-  
   "lugares": [
-    
+    {
+      "id": "7bff",
+      "nome": "Praia cabo branco",
+      "categoria": "Praias",
+      "localizacao": "João Pessoa",
+      "urlFoto": "https://tse4.mm.bing.net/th/id/OIP.GD8Wo0-wLp8x2DrfzTgqBgHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "avaliacao": "5"
+    },
+    {
+      "id": "72a3",
+      "nome": "Lojas",
+      "categoria": "Shoppings",
+      "localizacao": "João Pessoa",
+      "urlFoto": "https://cdn.maioresemelhores.com/imagens/mm-salvador-cke.jpg",
+      "avaliacao": "4"
+    },
+    {
+      "id": "b1fe",
+      "nome": "Nau",
+      "categoria": "Restaurantes",
+      "localizacao": "João Pessoa",
+      "urlFoto": "https://theworldkeys.com/wp-content/uploads/2023/06/Nau-Frutos-Do-Mar-Joao-Pessoa_theworldkeys_2-1024x686.webp",
+      "avaliacao": "4"
+    }
   ]
 }
