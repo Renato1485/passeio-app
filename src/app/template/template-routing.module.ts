@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
-import { animation } from '@angular/animations';
 
 const routes: Routes = [
   {
@@ -10,20 +9,17 @@ const routes: Routes = [
     children: [
       {
         path: 'categorias',
-        loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasModule),
-        pathMatch: 'full',
+        loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasModule),        
         data: { titulo: 'Categorias', subTitulo: 'Realize o cadastro de novas categorias', animation: 'CategoriaPage'}
       },
       {
         path: 'lugares',
-        loadChildren: () => import('../lugares/lugares.module').then(m => m.LugaresModule),
-        pathMatch: 'full',
-        data: { titulo: 'Lugares', subTitulo: 'Realize o cadastro de novos lugares', animation: 'LuagresPage'}
+        loadChildren: () => import('../lugares/lugares.module').then(m => m.LugaresModule),        
+        data: { titulo: 'Lugares', subTitulo: 'Realize o cadastro de novos lugares', animation: 'LugaresPage'}
       },
       {
         path: 'galeria',
-        loadChildren: () => import('../galeria/galeria.module').then(m => m.GaleriaModule),
-        pathMatch:'full',
+        loadChildren: () => import('../galeria/galeria.module').then(m => m.GaleriaModule),        
         data: { titulo: 'Galeria', subTitulo: 'Descubra os melhores lugares para explocar', animation: 'GaleriaPage'}
       }
     ]
